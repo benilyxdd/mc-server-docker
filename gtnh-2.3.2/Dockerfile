@@ -6,9 +6,9 @@ RUN apt-get install openjdk-8-jdk wget unzip screen vim -y
 RUN mkdir /server
 WORKDIR /server
 
-RUN wget http://downloads.gtnewhorizons.com/ServerPacks/GT_New_Horizons_2.2.7_SERVER.zip
-RUN unzip GT_New_Horizons_2.2.7_SERVER.zip
-RUN rm GT_New_Horizons_2.2.7_SERVER.zip
+RUN wget http://downloads.gtnewhorizons.com/ServerPacks/GT_New_Horizons_2.3.2_Server.zip
+RUN unzip GT_New_Horizons_2.3.2_Server.zip
+RUN rm GT_New_Horizons_2.3.2_Server.zip
 COPY mods/* /server/mods/
 COPY world/ /server/World
 COPY startserver.sh /server/startserver.sh
